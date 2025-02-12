@@ -1,8 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+}
 .head {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0px;
+    justify-content: space-between;
+  margin: 20px 140px 0px;
+   opacity: 0.5;
 }
 
 .topleft {
@@ -16,16 +23,10 @@
 
 .background {
     position: relative;
-    padding: 0px;
    margin-bottom: 50px;
     display: block;
-}
-
-.background {
     width: 100%;
-    object-fit: cover;
     height: 600px;
-    
 }
 
 .button {
@@ -35,25 +36,26 @@
 }
 
 .nav {
-
+    font-family: "Lato", serif;
     font-size: 40px;
     display: flex;
-    top: 10px;
-    left: 5%;
+    top: 4%;
+    left: 10%;
     position: absolute;
     color: white;
 }
 
-.li li {
-    list-style: none;
+
+.li  {
     gap: 30px;
     display: flex;
     position: absolute;
-    top: 10px;
-    left: 30%;
+    top: 5%;
+    left: 33%;
     color: white;
     justify-content: center;
     align-items: center;
+    margin: 0px 15px;
 }
 
 .trsvg{
@@ -66,9 +68,10 @@
 }
 
 .btn {
-    padding: 10px 25px;
+    
+    padding: 7px 25px;
     background: white;
-    color: black;
+    color:  solid white;
     border: none;
     cursor: pointer;
     font-size: 13px;
@@ -76,8 +79,7 @@
     opacity: 0.3;
     display: flex;
     gap: 10px;
-    height: 20px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 10px;
 }
@@ -89,68 +91,75 @@
 
 .btn-cont {
     position: absolute;
-    top: 22px;
+    top: 5%;
     right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
 }
 
 .middle {
     position: absolute;
-    top: 30%;
+    top: 23%;
     left: 10%;
+     
 }
 
 .cap {
-    font-size: 50px;
+    font-size: 55px;
     color: white;
     font-weight: bold;
-    max-width: 400px;
-
+    max-width: 450px;
+    font-family: "Lato", serif;
 }
 
+
 .small {
+  
     color: white;
-    padding: 25px;
-    max-width: 400px;    
+    padding: 28px;
+    max-width: 400px;  
+    font-family: "Lato", serif;
+    left: 0px;
+    top: 50%;
 }
 
 .box {
+   
    display: flex;
-    gap: 8px;
-    padding: 20px;
+    gap: 15px;
+    
 }
 
 .b {
+    font-family: "Lato", serif;
     cursor: pointer;
-    margin: auto;
-    
-    padding: 20px;
-    font-size: 17px;
+    padding: 18px 30px;
+    font-size: 14px;
     background-color: white;
-    font-weight: bold;
+    font-weight: 550;
 }
 .b:hover{
     color: white;
-    background-color: rgb(151, 73, 73);
+    background-color: transparent;
+    border: 2px  solid white;    
 }
+
 .obj:hover{
     color: black;
-    background-color: white;
+    background-color:  white;
     border-radius: 20px;
-    
-    padding: 10px 10px;
     cursor: pointer;
+    justify-content: center;
 }
 .obj{
+    padding: 10px;
     box-sizing: border-box;
     transition: all 0.5 ease;
 }
 .mobile {
-
+    
     position: fixed;
     top: 0;
     left: -100%;
@@ -161,6 +170,7 @@
     transition: left 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     padding-top: 60px;
     z-index: 10;
 }
@@ -216,23 +226,19 @@ position: absolute;
     bottom: 10px;
     right: 10px;
     cursor: pointer;
+    z-index: 100;
 }
 .r1{
     margin-top: 60px;
-   
-    
+    gap: 20px;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
 
-}
-.I1{
-    margin-right: 30px
-    
-}
-.I2{
-  
-    margin-right: 30px;
+.I1 , .I2, .I3{
+    font-family:  "Lato", serif; 
 }
 .h4:hover{
     cursor: pointer;
@@ -291,10 +297,14 @@ footer{
     height: 40px;
 
 }
-.ph span{
-    height: 40px;
-    width: 40px;
-    background-color: green;
+.block {
+    position: relative;
+    padding: 13px;
+    background-color: rgb(173, 210, 125);
+    right: 10vw;
+}
+.block:hover{
+    cursor: pointer;
 }
 .i{
     justify-content: space-between;
@@ -331,8 +341,104 @@ footer{
     position: relative;
     left: 30vw;
 }
+.r2{
+    width: 90%;
+    position: relative;
+    margin: 15px ;
+    padding: 0px 60px 60px 60px;
+    overflow: hidden;
+   right: 10px;
+}
+.imgs{
+    display: flex;
+  gap: 18px;
+ flex-wrap: nowrap;
+ transition: transform 0.5s ease-in-out;
+}
+ .r2i img{
+   width: 100%;
+    border: 2px solid black;
+    background-color: rgb(242, 239, 239);
+   
+}
+ .r2i{
+  margin: 10px;
+    display: flex;
+    flex: 0 0 18%;
+    flex-direction: column;
+    width: 20%;
+   
+   
+}
+.r2i h2 :hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.r2i p{
+    max-width: 100%;
+}
+.r2i:last-child img {
+    margin-left: 0px; 
+}
+.r2h{
+    margin-top: 20px;
+    text-decoration: underline;
+    margin-left: 80px;
+}
+.arrow1 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+   left: 20px;
+    margin: 0px;
+    z-index: 10;
+}
+.arrow2 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    right: 0px;
+    margin: 0px;
+   
+}
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1145px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        position: relative;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+    .r2i {
+        flex: 0 0 50%; 
+        width: 50vw;
+    
+    }
+
+    .r2i img {
+        max-width: 100%; 
+        width: 100%;
+    }
+    
+   
+    
+
     .head ,.li, .btn-cont {
         display: none;
 
@@ -342,55 +448,72 @@ footer{
         display: block;
         position: absolute;
         z-index: 25;
-        top: 15px;
-        left: 0px;
-        color: black;
+        top: 35px;
+        left: 25px;
+      
+    }
+        
+      
+    .background{
+        position: relative;
     }
 
     .background .bg img {
         content: url('https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/homepage/mx-brio-hpb-tablet.jpg?v=1');
         width: 100%;
-        height: 600px;
-        object-fit: cover;
+        height: fit-content;
+        margin-bottom: 10px;
     }
     .mobile{
-        
         position: fixed;
-        top: 0;
-        
-        width: 90%;
-        height: 60%;
+        top: 0%;
+        width: 80%;
+        height: 100%;
         color: black;
         z-index: 10000;
         display: flex;
         flex-direction: column;
     }
     .middle{
+        position: absolute;
         transform: translateX(-50%);
-        top: 15%;
+        top: 22%;
         left: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
     .cap{
-        font-size: 20px;
+          
+        font-size: 50px;
         display: flex;
         max-width: 400px;
-        left: 60%;
-       
+      justify-content: center;
+       align-items: center;
     }
     .small{
-        font-size: 10px;
-        max-width: 350px;
+        font-size: 30px;
+        max-width: 450px;
     }
     .box{
-        max-width: 300px;
-
+        margin-top: 20px;
+        top: 95%;
+        position: absolute;
+        max-width: 230px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       left: 25%;
     }
+
     .b{
-       padding: 4px 2px ;
-        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+       padding: 25px 20px ;
+        font-size: 22px;
     }
     .nav{
-       font-size: 25px;
+       font-size: 58px;
        top: 20px;
        left: 50%;
        justify-content: center;
@@ -401,39 +524,45 @@ footer{
     .trsvg{
         display: block;
         position: absolute;
-        right: 20px;
-        top: 20px;
-        color: white;
+        right: 70px;
+        top: 40px;
         
     }
+    
     .footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: max-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        left: 40%;
+    }
+   
+     .r1 img{
+        margin-bottom: 20px;
+        width: 650px;
+        height: 650px;
+     }
+    
+    .I1{
+        position: static;
+       font-size: 30px;
     }
     .I2{
-        margin: 30px 0;
+        position: static;
+       font-size: 30px; 
+       
+        max-width: 600px;
+    }
+    .I3{
+        position: static;
+       font-size: 30px;
     }
     .r1{
+       position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       margin: 50px 30vw;
-       width: 100vw;
-        
-        
-    }
-    
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-
+       margin: 60px 0px;
+       gap: 50px;
+       
     }
 }
